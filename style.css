@@ -33,13 +33,13 @@ i, svg {
     background-color: rgb(193, 160, 224);
 }
 
-.kick-pad {
+.kick-pad.active {
     background: rgb(61, 201, 236);
 }
-.snare-pad {
+.snare-pad.active {
     background: rgb(143, 61, 236);
 }
-.hihat-pad {
+.hihat-pad.active {
     background: rgb(236, 175, 61);
 }
 
@@ -101,4 +101,13 @@ i, svg {
 select {
     padding: 1rem;
     font-size: 1.5rem;
+}
+
+@keyframes playTrack {
+    from {
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    } 
 }
